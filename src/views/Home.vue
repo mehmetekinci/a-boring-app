@@ -1,6 +1,9 @@
 <template>
   <div class="">
-    <h1 class="text-center my-10">This is an Home page</h1>
+    <h1 class="text-center my-10 sm:text-2xl">
+      Are you bored? do you want to try something new? <br />There is something
+      new here. Click the button! <br />Get random activity
+    </h1>
     <ActivityCard v-if="activity" :activity="activity" />
     <button
       class="
@@ -24,6 +27,7 @@
 </template>
 
 <script lang="ts">
+import Activity from "@/types/Activity";
 import { defineComponent, onMounted, ref } from "vue";
 import ActivityCard from "../components/ActivityCard.vue";
 import { getRandomActivity } from "../libs/getActivity";
@@ -32,7 +36,7 @@ export default defineComponent({
   name: "Home",
   components: { ActivityCard },
   setup() {
-    const activity = ref(null);
+    const activity = ref<Activity | null>(null);
 
     const getData = async () => {
       activity.value = await getRandomActivity();
