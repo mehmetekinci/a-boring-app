@@ -1,7 +1,6 @@
 <template>
-  <div id="nav" class="max-w-3xl mx-auto bg-white h-screen rounded-xl">
+  <div id="container" class="max-w-3xl mx-auto bg-white h-screen rounded-xl">
     <NavBar />
-
     <router-view />
   </div>
 </template>

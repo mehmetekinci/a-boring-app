@@ -22,7 +22,7 @@
     <router-link
       class="px-2 py-1 hover:bg-purple-500 hover:text-pink-50 rounded-t-xl"
       to="/advice"
-      >Do you need some help?</router-link
+      >Need some help?</router-link
     >
 
     <router-link
