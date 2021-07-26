@@ -1,6 +1,6 @@
 <template>
-  <div class="bookmarks">
-    <h1>This is an bookmarks page</h1>
+  <div class="bookmarks text-center text-4xl mt-12">
+    <h1>Cooming Soon!</h1>
   </div>
 </template>
 

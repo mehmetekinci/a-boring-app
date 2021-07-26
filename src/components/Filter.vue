@@ -72,7 +72,6 @@ export default defineComponent({
     };
 
     const handleSearch = () => {
-      console.log(activityInfos);
       emit("search:activity", activityInfos);
     };
 
