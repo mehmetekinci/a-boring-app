@@ -1,7 +1,7 @@
 import Activity from '@/types/Activity';
 
 export const getRandomActivity = async (): Promise<Activity> =>
-  await fetch('http://www.boredapi.com/api/activity/')
+  await fetch('https://www.boredapi.com/api/activity/')
     .then((response) => response.json())
     .then((data) => data);
 
